@@ -1,22 +1,22 @@
 package ua.epam.hw6Test;
 
 import org.junit.Test;
-import ua.epam.hw6.ErrorNum;
+import ua.epam.hw6.ErrorNumber;
 import static org.junit.Assert.assertArrayEquals;
 
-public class ErrorNumTest {
+public class ErrorNumberTest {
     int[] input = {1,2,2,4};
     int[] nullInput;
     int[] result = {2,3};
-    ErrorNum errorNum = new ErrorNum();
+    ErrorNumber errorNumber = new ErrorNumber();
 
     @Test
     public void testErrorNum() {
-        assertArrayEquals(errorNum.errorNumber(input), result);
+        assertArrayEquals(errorNumber.errorDuplicatedNumber(input), result);
     }
 
     @Test
     public void testErrorNumByNull() {
-        assertArrayEquals(errorNum.errorNumber(nullInput), new int[]{});
+        assertArrayEquals(errorNumber.errorDuplicatedNumber(nullInput), new int[]{});
     }
 }

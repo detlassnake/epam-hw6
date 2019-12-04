@@ -13,8 +13,8 @@ Input: nums = [1,2,2,4]
 Output: [2,3]
 */
 
-public class ErrorNum {
-    public int[] errorNumber(int[] arr) {
+public class ErrorNumber {
+    public int[] errorDuplicatedNumber(int[] arr) {
         if (arr == null) {
             return new int[]{};
         }
